@@ -1,21 +1,29 @@
-@import '_variables.scss';
-@import 'mixin.scss';
-@import '_general';
-@import 'reset';
+@import "mixin";
+@import "_veriables";
+@import "_general";
+@import "reset";
 
-@import 'block/_header.scss';
-@import 'block/menu-sub-item';
-@import 'block/_brand.scss';
-@import 'block/_sale.scss';
-@import 'block/products';
-@import 'block/feature';
-@import 'block/frame';
-@import 'block/adress';
-@import 'block/form';
-@import 'block/registration';
-@import 'block/perks';
-@import 'block/shopping';
-@import 'block/basket';
-@import 'block/basket';
-@import 'block/checkout';
-@import 'block/copyright';
+@import "block/index/_header";
+@import "block/index/_menu-sub-item";
+@import "block/index/_brand";
+@import "block/index/sale";
+@import "block/index/feature";
+@import "block/index/service";
+@import "block/index/frame";
+@import "block/index/copyright";
+
+@import "block/registration/registration";
+@import "block/registration/form";
+@import "block/registration/perks";
+
+@import "block/card/shopping";
+@import "block/card/adress";
+@import "block/card/basket";
+@import "block/card/basket-text";
+@import "block/card/checkout";
+
+@import "block/product/menu";
+@import "block/product/product";
+@import "block/product/pay";
+@import "block/product/carousel";
+@import "block/product/card-main";
