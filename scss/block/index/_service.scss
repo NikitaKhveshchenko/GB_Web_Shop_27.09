@@ -1,0 +1,44 @@
+.service {
+  background-color: $black;
+  min-height: 340px;
+  @include flex-center;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    @include tablet-min {
+      flex-direction: column;
+      @include flex-center;
+    }
+  }
+
+  &__item {
+    @include flex-center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    text-transform: capitalize;
+    text-align: center;
+
+    @include tablet-min {
+      width: 55%;
+      margin: 0 0 48px 0;
+
+      &:first-child {
+        margin: 48px 0 48px 0;
+      }
+    }
+  }
+
+  &__title {
+    @include font(20px, 24px, 400);
+    color: $white;
+    margin: 28px 0 16px 0;
+  }
+
+  &__text {
+    @include font(14px, 17px, 300);
+    color: $light-gray;
+  }
+}
