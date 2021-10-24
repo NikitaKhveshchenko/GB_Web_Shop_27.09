@@ -31,6 +31,10 @@
     }
   }
 
+  &__ico {
+    fill: $dark-pink;
+  }
+
   &__title {
     @include font(20px, 24px, 400);
     color: $white;
