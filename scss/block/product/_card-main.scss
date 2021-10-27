@@ -3,11 +3,13 @@
 
   &__title {
     @include font(13px, 16px, 400);
+    text-transform: uppercase;
   }
   &__text {
     @include font(14px, 17px, 300);
     color: $transparent-gray;
     margin: 0 0 18px 0;
+    text-transform: capitalize;
   }
   &__link {
     @include font(16px, 19px, 400);

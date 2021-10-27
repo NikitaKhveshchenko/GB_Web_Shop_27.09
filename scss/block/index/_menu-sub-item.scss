@@ -1,16 +1,21 @@
 .menu-sub-item {
+  &__title {
+    padding: 20px 0 0 0;
+  }
 
-	&__title {
-		@include font(14px, 17px);
-		text-transform: uppercase;
-		color: $dark-pink;
-		margin: 20px 0 0 0;
-	}
+  &__link-title {
+    @include font(14px, 17px);
+    text-transform: uppercase;
+    color: $dark-pink;
+  }
 
-	&__item {
-		@include font(14px, 17px);
-		text-transform: capitalize;
-		margin: 12px 0 0 20px;
-		color: $darkgray;
-	}
+  &__item {
+    padding: 12px 0 0 20px;
+  }
+
+  &__link-text {
+    @include font(14px, 17px);
+    text-transform: capitalize;
+    color: $darkgray;
+  }
 }

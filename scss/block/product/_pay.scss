@@ -18,23 +18,31 @@
   &__title {
     @include font(14px, 17px, 300);
     color: $dark-pink;
+    text-transform: uppercase;
   }
 
   &__subtitle {
     @include font(18px, 22px, 300);
     margin: 27px 0 48px 0;
+    text-transform: uppercase;
   }
 
   &__text {
     @include font(14px, 17px, 300);
     width: 48%;
     margin: 0 0 33px 0;
+    text-transform: capitalize;
   }
 
   &__link {
     font-size: 24px;
     font-weight: 300;
     color: $dark-pink;
+  }
+
+  &__subtext {
+    text-transform: uppercase;
+    color: $light-gray;
   }
 
   &__btn {
@@ -46,7 +54,7 @@
     }
   }
 
-  &__img {
+  &__ico {
     fill: $dark-pink;
     margin: 0 10px 0 0;
   }

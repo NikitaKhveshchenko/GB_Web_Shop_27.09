@@ -200,6 +200,10 @@ table {
   margin: 0 41px 0 0;
 }
 
+.header__ico-svg {
+  fill: #fff;
+}
+
 .header__buttom {
   border: none;
   background: transparent;
@@ -267,27 +271,37 @@ table {
   z-index: 1;
 }
 
+.header__menu-cross {
+  fill: #5d5d5d;
+}
+
 .display-block {
   display: block;
 }
 
 .menu-sub-item__title {
+  padding: 20px 0 0 0;
+}
+
+.menu-sub-item__link-title {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   color: #f16d7f;
-  margin: 20px 0 0 0;
 }
 
 .menu-sub-item__item {
+  padding: 12px 0 0 20px;
+}
+
+.menu-sub-item__link-text {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   font-style: normal;
   text-transform: capitalize;
-  margin: 12px 0 0 20px;
   color: #5d5d5d;
 }
 
@@ -696,7 +710,8 @@ table {
           box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.feature__overlay-img {
+.feature__ico-products {
+  fill: #fff;
   margin: 0 10px 0 0;
 }
 
@@ -810,6 +825,10 @@ table {
   .service__item:first-child {
     margin: 48px 0 48px 0;
   }
+}
+
+.service__ico {
+  fill: #f16d7f;
 }
 
 .service__title {
@@ -1430,7 +1449,7 @@ table {
   line-height: 17px;
   font-weight: 300;
   font-style: normal;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
   background: transparent;
   padding: 16px 40px;
   text-transform: uppercase;
@@ -1440,6 +1459,10 @@ table {
   background-color: #f16d7f;
   border: #f16d7f;
   color: #fff;
+}
+
+.basket__ico {
+  fill: #5d5d5d;
 }
 
 .basket__pink {
@@ -1609,6 +1632,7 @@ table {
   font-weight: 300;
   font-style: normal;
   color: #f16d7f;
+  text-transform: uppercase;
 }
 
 .pay__subtitle {
@@ -1617,6 +1641,7 @@ table {
   font-weight: 300;
   font-style: normal;
   margin: 27px 0 48px 0;
+  text-transform: uppercase;
 }
 
 .pay__text {
@@ -1626,12 +1651,18 @@ table {
   font-style: normal;
   width: 48%;
   margin: 0 0 33px 0;
+  text-transform: capitalize;
 }
 
 .pay__link {
   font-size: 24px;
   font-weight: 300;
   color: #f16d7f;
+}
+
+.pay__subtext {
+  text-transform: uppercase;
+  color: #b1b1b1;
 }
 
 .pay__btn {
@@ -1645,7 +1676,7 @@ table {
   color: #f16d7f;
 }
 
-.pay__img {
+.pay__ico {
   fill: #f16d7f;
   margin: 0 10px 0 0;
 }
@@ -1663,6 +1694,7 @@ table {
   line-height: 16px;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 .card-main__text {
@@ -1672,6 +1704,7 @@ table {
   font-style: normal;
   color: #a4a4a4;
   margin: 0 0 18px 0;
+  text-transform: capitalize;
 }
 
 .card-main__link {
