@@ -1,0 +1,129 @@
+.products-catalog {
+  &__box {
+    display: flex;
+    margin: 50px 0 64px 0;
+
+    @include tablet {
+      justify-content: space-between;
+    }
+  }
+
+  &__list-burger {
+    display: flex;
+  }
+
+  &__burger-dop {
+    border: none;
+    background: none;
+    display: flex;
+    @include font(14px, 17px, 400);
+    color: $darkgray;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      @include font(12px, 14px, 400);
+    }
+  }
+
+  &__subtext {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__img-burger {
+    margin: 0 0 0 10px;
+  }
+
+  &__item-burger {
+    margin: 0 28px 0 0;
+  }
+
+  &__burger {
+    border: none;
+    background: none;
+    @include font(14px, 17px, 600);
+    text-transform: uppercase;
+    display: flex;
+  }
+
+  &__img {
+    margin: 0 320px 0 11px;
+
+    @include tablet {
+      margin: 0 0 0 11px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 16px;
+    }
+  }
+
+  &__item {
+    background-color: $darkwhite;
+  }
+
+  &__wrp {
+    @include flex-center;
+    margin: 48px 0 96px 0;
+  }
+
+  &__sub-list {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    padding: 15px;
+
+    @include tablet {
+      width: 38%;
+    }
+
+    @include mobile {
+      width: 75%;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    @include font(16px, 19px, 300);
+    color: $light-gray;
+
+    &:hover {
+      color: $dark-pink;
+      cursor: pointer;
+    }
+
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.7;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+        0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+        0 -1px 0 rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__pink {
+    color: $dark-pink;
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Catalog</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<div class="header__box">
+				<svg class="header__logo" width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<rect width="44" height="38" fill="url(#pattern0)"/>
+					<defs>
+					<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+					<use xlink:href="#image0" transform="scale(0.0227273 0.0263158)"/>
+					</pattern>
+					<image id="image0" width="44" height="38" xlink:href="data:image/png;base64,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"/>
+					</defs>
+					</svg>
+				<button class="header__buttom effects">
+					<svg class="header__ico-svg" width="27" height="28">
+						<use xlink:href="img/sprite.svg#search"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="header__box">
+				<button class="header__burger effects" type="button" id="burger">
+					<svg class="header__ico-svg" width="32" height="32">
+						<use xlink:href="img/sprite.svg#burger"></use>
+					</svg>
+				</button>
+				<a class="header__ico" href="#">
+					<svg class="header__ico-svg effects" width="29" height="29">
+						<use xlink:href="img/sprite.svg#reg"></use>
+					</svg>
+				</a>
+				<a class="header__ico" href="#">
+					<svg class="header__ico-svg effects" width="32" height="29">
+						<use xlink:href="img/sprite.svg#basket"></use>
+					</svg>
+					</a>
+				<nav class="header__menu" id="menu">
+					<h2 class="header__title">menu</h2>
+					<ul class="header__menu-list">
+						<li class="header__menu-item menu-sub-item">
+							<h3 class="menu-sub-item__title effects"><a class="menu-sub-item__link-title" href="#">man</a></h3>
+							<ul class="menu-sub-item__list">
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">accessories</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">bags</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">denim</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">t-shirts</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3 class="menu-sub-item__title effects"><a class="menu-sub-item__link-title" href="#">woman</a></h3>
+							<ul>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">accessories</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">jackets &amp;&nbsp;coats</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">polos</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">t-shirts</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">shirts</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3 class="menu-sub-item__title effects"><a class="menu-sub-item__link-title" href="#">kids</a></h3>
+							<ul>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">accessories</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">jackets &amp;&nbsp;coats</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">polos</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">t-shirts</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">shirts</a></li>
+								<li class="menu-sub-item__item effects"><a class="menu-sub-item__link-text" href="#">bags</a></li>
+							</ul>
+						</li>
+						<button class="header__menu-output effects" type="button" id="output">
+							<svg class="header__menu-cross" width="13" height="13">
+								<use xlink:href="img/sprite.svg#cross"></use>
+							</svg>
+						</button>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="arrivels">
+			<div class="arrivels__box container">
+				<h1 class="arrivels__title">new arrivals </h1>
+				<ul class="arrivels__list">
+					<li class="arrivels__item"><a href="#" class="arrivels__link">home /</a></li>
+					<li class="arrivels__item"><a href="#" class="arrivels__link">men /</a></li>
+					<li class="arrivels__item"><p class="arrivels__text">new arrivals</p></li>
+				</ul>
+			</div>
+		</section>
+		<section class="products-catalog">
+			<h2 class="visually-hidden">products catalog</h2>
+			<div class="container">
+				<div class="products-catalog__box">
+					<button class="products-catalog__burger effects">
+					<p class="products-catalog__subtext">filter</p>
+					<img class="products-catalog__img" src="img/products/burger.svg" alt="burger">
+					</button>
+					<ul class="products-catalog__list-burger">
+						<li class="products-catalog__item-burger"><button class="products-catalog__burger-dop effects">trending now <img class="products-catalog__img-burger" src="img/products/arrow.svg" alt=""></button></li>
+						<li class="products-catalog__item-burger"><button class="products-catalog__burger-dop effects">size<img class="products-catalog__img-burger" src="img/products/arrow.svg" alt=""> </button></li>
+						<li class="products-catalog__item-burger"><button class="products-catalog__burger-dop effects">price<img class="products-catalog__img-burger" src="img/products/arrow.svg" alt=""></button></li>
+					</ul>
+				</div>
+				<ul class="products-catalog__list">
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-1.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-2.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-3.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-4.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-7.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-8.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-9.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-10.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+					<li class="products-catalog__item">
+						<div class="feature__cards">
+							<img src="img/products/cards-11.jpg" alt="products photo" class="feature__img" width="360" height="420">
+							<div class="feature__overlay"></div>
+							<button class="feature__overlay-btn"><div class="feature__overlay-position">
+								<svg class="feature__ico-products" width="27" height="25">
+									<use xlink:href="img/sprite.svg#strockeeffect"></use>
+								</svg>
+								add to cart</div></button>
+						</div>
+						<div class="feature__box">
+							<h3 class="feature__subtitle">ELLERY X M'O CAPSULE</h3>
+							<p class="feature__subtext">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+							<a href="#" class="feature__linck">$52.00</a>
+						</div>
+					</li>
+				</ul>
+				<div class="products-catalog__wrp">
+					<ul class="products-catalog__sub-list">
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn"><img src="img/products/arrow-l.svg" alt=""></button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn products-catalog__pink">1</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn">2</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn">3</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn">4</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn">5</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn">6</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn">...</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn">20</button></li>
+						<li class="products-catalog__sub-item"><button class="products-catalog__btn"><img src="img/products/arrow-r.svg" alt=""></button></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<section class="frame">
+			<div class="container frame__container">
+				<h2 class="visually-hidden">frame</h2>
+				<div class="frame__box">
+					<img class="frame__img" src="img/footer/profil.png" alt="profil">
+					<p class="frame__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<span
+							class="frame__subtext"> a pulvinar purus
+							condimentum</span>“</p>
+				</div>
+				<form class="frame__form" action="">
+					<label for="frame__desc" class="frame__lead"><span class="frame__sublead"><span
+								class="frame__lead-fixes">subscribe</span></span>
+						for our newletter and promotion</label>
+					<div class="frame__position">
+						<input placeholder="enter your email" type="text" id="frame__desc" class="frame__subscription">
+						<button type="button" class="frame__btn effects">subscribe</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="copyright">
+			<div class="container copyright__box">
+				<h2 class="visually-hidden">copyright</h2>
+				<p class="copyright__text">© 2021 brand all rights reserved.</p>
+				<ul class="copyright__list">
+					<li class="copyright__item effects"><a class="copyright__link" href="#">
+						<svg width="32" height="32">
+							<use xlink:href="img/sprite.svg#facebook"></use>
+						</svg>
+					</a></li>
+					<li class="copyright__item effects"><a class="copyright__link" href="#">
+						<svg width="33" height="32">
+							<use xlink:href="img/sprite.svg#instagram"></use>
+						</svg>
+					</a></li>
+					<li class="copyright__item effects"><a class="copyright__link" href="#">
+						<svg width="32" height="32">
+							<use xlink:href="img/sprite.svg#pinters"></use>
+						</svg>
+					</a></li>
+					<li class="copyright__item effects"><a class="copyright__link" href="#">
+						<svg width="32" height="32">
+							<use xlink:href="img/sprite.svg#twitter"></use>
+						</svg>
+					</a></li>
+				</ul>
+			</div>
+		</section>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
